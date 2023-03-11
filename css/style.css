@@ -74,7 +74,7 @@ a {
    padding-top: 100px;
 }
 
-.intro__text {
+.intro-text {
    max-width: 570px;
 
 }
@@ -139,6 +139,7 @@ a {
    color: #BF0830;
 }
 
+
 .brends-title {
    color: #1A2578;
    text-align: center;
@@ -187,7 +188,7 @@ a {
 }
 
 
-.prod-block1 {
+.prod-block__1 {
    width: 538px;
    height: 530px;
    margin-right: 15px;
@@ -199,7 +200,7 @@ a {
 
 
 
-.prod-block2 {
+.prod-block__2 {
    width: 538px;
    height: 530px;
    margin-left: 15px;
@@ -209,24 +210,24 @@ a {
    overflow: hidden;
 }
 
-.group1 {
+.group-1 {
    padding-left: 10px;
 
 }
 
-.group2 {
+.group-2 {
    padding-left: 40px;
 }
 
 
 
-.prod-block_mini {
+.prod-block__mini {
    width: 352px;
    height: 217px;
    margin: 64px 0 0 62px;
 }
 
-.prod-block_mini p {
+.prod-block__mini p {
    padding: 46px 0 44px 0;
    font-weight: 400;
    font-size: 24px;
@@ -298,7 +299,7 @@ a {
 
 .port-text {
    text-align: center;
-
+   padding: 110px 0;
 }
 
 .port-title {
@@ -306,7 +307,7 @@ a {
    font-size: 44px;
    line-height: 57px;
    color: #1A2578;
-   margin: 120px 0 15px 0;
+   margin-bottom: 15px;
 }
 
 .port-subtitle {
@@ -314,7 +315,6 @@ a {
    font-size: 16px;
    line-height: 27px;
    color: #484C63;
-   margin-bottom: 113px;
 }
 
 
@@ -327,23 +327,23 @@ a {
    
 }
 
-.port-block:nth-child(1) {
+.port-blocks__item:nth-child(1) {
    padding-top: 12px;
 }
 
-.port-block:nth-child(2) {
+.port-blocks__item:nth-child(2) {
    padding-top: 12px;
 }
 
-.port-block:nth-child(3) {
+.port-blocks__item:nth-child(3) {
    padding-top: 35px;
 }
 
-.port-block:nth-child(4) {
+.port-blocks__item:nth-child(4) {
    padding-top: 33px;
 }
 
-.port-block {
+.port-blocks__item {
    width: 256px;
    height: 119px;
    box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
@@ -351,6 +351,13 @@ a {
 }
 
 .port-arrows img {
+   padding-right:  10px;
+}
+
+.port-arrows {
+
+   display: flex;
+   flex-direction: row;
    padding-top: 55px;
    margin-bottom: 20px;
 }
@@ -418,7 +425,7 @@ a {
    padding-bottom: 30px;
 }
 
-.footer-logo_text {
+.footer-logo__text {
    width: 287px;
    font-weight: 400;
    font-size: 16px;
@@ -472,8 +479,19 @@ a {
    margin-left: 111px;
 }
 
+
+.follow-social {
+   display: flex;
+   flex-direction: row;
+   
+}
+
+.social-item__2 {
+   padding-top: 1px;
+}
+
 .follow-social a {
-   padding-right: 10px;
+   padding-right: 15px;
 }
 
 
@@ -497,3 +515,148 @@ a {
    border-bottom: 1px solid #fff;
 }
 
+
+
+
+@media (max-width:1300px) {
+   /* intro */
+
+   .intro {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+   }
+
+   .intro img {
+      margin: 25px auto;
+      width: 500px;
+   }
+
+
+   .intro-text {
+      text-align: center;
+      margin: 0 auto;
+   }
+
+   /* brends */
+
+   .brends-title {
+      width: 600px;
+      margin: 60px auto;
+   }
+
+
+   .brends-img {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+   }
+
+   .brends-img img {
+      padding-bottom: 20px;
+   }
+
+   /* Products */
+
+   .products {
+      width: 600px;
+      margin: 40px auto;
+   }
+
+   .prod-blocks {
+      display: flex;
+      flex-direction: column;
+   }
+
+
+   .prod-block__1 {
+      margin: 0 auto;
+   }
+
+   .prod-block__2 {
+      margin: 20px auto 0 auto;
+   }
+
+   /* Create */
+
+   .create {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      padding: 50px;
+      
+   }
+
+   .create-text {
+      height: 200px;
+      margin: 0 auto 30px auto;
+   }
+
+   .create-img {
+      margin: 0 auto;
+   }
+
+   /* Footer */
+
+   .footer-end_items {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 0 auto;
+   }
+
+   .footer-end_items a {
+      width: 140px;
+      margin: 0 auto;
+   }
+
+   /* Portals */
+
+   .port-text {
+      width: 500px;
+      margin: 0 auto;
+      padding: 50px 0;
+
+   }
+
+   .port-subtitle {
+      width: 300px;
+      margin: 0 auto;
+   }
+
+   .port-blocks {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column: 100px;
+   }
+
+   .port-blocks__item {
+      margin: 0 auto 30px auto;
+   }
+
+   .port-arrows {
+      width: 70px;
+      margin: 0 auto;
+   }
+
+   /* balls */
+
+   .balls {
+
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .balls-text {
+      width: 370px;
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   .balls img {
+      width: 500xp;
+      margin: 30px auto;
+   }
+
+}
