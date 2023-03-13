@@ -42,7 +42,13 @@ a {
    justify-content: space-between;
    align-items: center;
    padding-top: 33px;
+   padding-left: 40px;
+
+
 }
+
+
+
 
 .nav-burger__item {
    
@@ -731,6 +737,10 @@ a {
 
 @media (max-width:768px) {
    /* nav */
+
+   .nav {
+      padding-left: 0;
+   }
 
    .navbar {
       display: none;
